@@ -7,7 +7,7 @@ Team students name:
 &nbsp;
 - منة ناصر عبدالتواب
 &nbsp;
-- مروة راوى عبدالحميد
+- مروة راوي عبدالحميد
 &nbsp;
 - عصمت سعيد خميس
 
@@ -86,8 +86,8 @@ That step can be implemented using background subtraction algorithms:
 Note
 ------
 Please keep in mind that the code was compiled at the beginning without the use `Github`
-and as a team we finally compiled the code with each and every one of us has his
-own mark `(at comments)` on the part he did in the project
+and as a team we finally compiled the code with each and everyone of us has thier
+own mark `(at comments)` on the part they did in the project
 
 ---
 

@@ -39,6 +39,9 @@ Hence, we concern in presenting an application that will be capable of providing
   - where exactly that free spot in the parking lot to go direct to it saving your effort and time
 
 
+---
+
+
 Project Impact
 ------
 > On individuals 
@@ -52,7 +55,7 @@ Project Impact
   <br/>The less drivers idle, cruise and search for parking, the less the negative impact on the environment. 
   <br/>As, the decrement in number of cars turning around will also decrease the amount of vehicle oil burnt and by turn reduces the global ecological footprint.
 
-----------
+---
 
 Algorithm Procedure
 ------
@@ -77,7 +80,7 @@ That step can be implemented using background subtraction algorithms:
 
 >3. ASSIGN THE FREE AND THE BUSY PARKING SLOTS
 
-
+---
 
 Note
 ------

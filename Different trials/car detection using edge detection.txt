@@ -1,0 +1,7 @@
+1. Egde detection for each slot ( using canny).
+2. compute the average of white pixels. 
+3. if the perecentage of white pixels are more than 40% so that tells that there's a car in this slot.
+-Note:
+->we may face some problems in this method :
+-the car has the same color as the ground this will give as uncertainly precentang.
+-if the lightening is not good enough,the precentage of the white pixels wont be accurate.  

@@ -1,4 +1,4 @@
-1- yaml
+1- yaml (pip install pyYAML)
 2- numpy
 3- cv2
-4- threading
+4- threading (pip install threaded)

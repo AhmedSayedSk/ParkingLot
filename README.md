@@ -5,9 +5,9 @@ Team students name:
 &nbsp;
 - عبدالله محسن سيد
 &nbsp;
-- منه ناصر عبدالتواب
+- منة ناصر عبدالتواب
 &nbsp;
-- مروه راوى عبدالحميد
+- مروة راوى عبدالحميد
 &nbsp;
 - عصمت سعيد خميس
 
@@ -37,6 +37,49 @@ Every time you are looking to park your car you need to circle around to find ou
 Hence, we concern in presenting an application that will be capable of providing you with information about the parking lot you are looking to park your car in.
   - If there is a free space for you or not?
   - where exactly that free spot in the parking lot to go direct to it saving your effort and time
+
+
+---
+
+
+Project Impact
+------
+> On individuals 
+-	Optimization for driver time, efforts and resources – e.g. car fuel. 
+<br/> Through finding the suitable parking spot in the nearest parking lot. So, you won't be late on your meeting and appointments anymore
+> On community
+-	Traffic jam reduction. 
+  <br/>As, the number of the cars circling around to find free parking spot ‘ll be reduced
+> On Environment
+-	The other plus side is the environmental impact.
+  <br/>The less drivers idle, cruise and search for parking, the less the negative impact on the environment. 
+  <br/>As, the decrement in number of cars turning around will also decrease the amount of vehicle oil burnt and by turn reduces the global ecological footprint.
+
+---
+
+Algorithm Procedure
+------
+The implementation of the desired project through the main following points: 
+>1. DETERMINE THE PARKING SLOTS IN THE PARKING LOT
+
+The configuration of the parking slots in an image or video frame can be achieved using:
+  -	Edge detection using canny functions to get the benefits of white lines of the parking spots then Hough line to specifically determine the start and the end of the line in the image
+  -	Then, followed by drawing contour for each parking spot and numbering the slots. So that, the numbers can be used further in the reset of the algorithm  
+
+But, the issue of the previously mentioned method is the following:
+  -	Needs an image for the parking lot when it’s completely empty.
+  -	If there are any obstacles in the camera view e.g.: tree – light column – etc. that will also add noise to the detection of existing parking slots either there ‘ll be slots won’t be detected or others will be detected as free when they are aren’t
+  -	The contour drawing process almost will require a user input at the first time the algorithm run. 
+
+So, it’s better to use another way that will also depend on user input (meant to be the team responsible of setting the algorithm at the parking lot to operate)
+  -	The method to be used is the formation of YAML file that contains the coordinates of the parking slots in the parking lot
+>2. DETECT ANY EXISTING MOTION OR CHANGE IN THE PARKING LOT
+
+That step can be implemented using background subtraction algorithms:
+  - MOG algorithm
+  - ROI (Region of Interest) algorithm
+
+>3. ASSIGN THE FREE AND THE BUSY PARKING SLOTS
 
 ---
 

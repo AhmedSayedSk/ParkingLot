@@ -73,7 +73,7 @@ So, it’s better to use another way that will also depend on user input (meant 
 >2. DETECT ANY EXISTING MOTION OR CHANGE IN THE PARKING LOT
 That step can be implemented using background subtraction algorithms:
   - MOG algorithm
-  - Algorithm of ROI (Region of Interest)
+  - ROI (Region of Interest) algorithm
 
 >3. ASSIGN THE FREE AND THE BUSY PARKING SLOTS
 

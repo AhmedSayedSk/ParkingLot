@@ -39,6 +39,9 @@ Hence, we concern in presenting an application that will be capable of providing
   - where exactly that free spot in the parking lot to go direct to it saving your effort and time
 
 
+---
+
+
 Project Impact
 ------
 > On individuals 
@@ -52,7 +55,7 @@ Project Impact
   <br/>The less drivers idle, cruise and search for parking, the less the negative impact on the environment. 
   <br/>As, the decrement in number of cars turning around will also decrease the amount of vehicle oil burnt and by turn reduces the global ecological footprint.
 
-----------
+---
 
 Algorithm Procedure
 ------
@@ -71,13 +74,14 @@ But, the issue of the previously mentioned method is the following:
 So, it’s better to use another way that will also depend on user input (meant to be the team responsible of setting the algorithm at the parking lot to operate)
   -	The method to be used is the formation of YAML file that contains the coordinates of the parking slots in the parking lot
 >2. DETECT ANY EXISTING MOTION OR CHANGE IN THE PARKING LOT
+
 That step can be implemented using background subtraction algorithms:
   - MOG algorithm
   - ROI (Region of Interest) algorithm
 
 >3. ASSIGN THE FREE AND THE BUSY PARKING SLOTS
 
-
+---
 
 Note
 ------

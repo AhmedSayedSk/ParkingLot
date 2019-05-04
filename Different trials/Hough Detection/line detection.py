@@ -3,7 +3,7 @@ import cv2 as cv
 import numpy as np
 
 
-# contributor: Menna
+# contributor: Menna & Abdullah
 
 def main(argv):
     #file = 'Empty1.jpg'

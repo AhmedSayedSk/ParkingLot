@@ -6,16 +6,16 @@ import yaml
 import numpy as np
 import cv2
 import os
-from time import sleep
-from threading import Timer
 
 # custom modules
 from modules.config import *
 from modules.init_parking import init_parking
 from modules.init_parking_data import *
 from modules.parking_detection import parking_detection
+from modules.coordinates_generator import CoordinatesGenerator
 from modules.keyboard_options import keyboard_options
 from modules.export_reading_in_file import export_reading_in_file
+from modules.colors import *
 
 # ------------------------------------------------------------------------------------
 
@@ -27,8 +27,13 @@ parking_bounding_rects = []
 # contributor: Menna
 # ------------------------
 
+# Write YAML Data (parking space polygons)
+with open(fn_yaml2, "w+") as coors:
+  generator = CoordinatesGenerator("datasets/parking_lot_1.png", coors, COLOR_RED)
+  generator.generate()
+
 # Read YAML data (parking space polygons)
-with open(fn_yaml, 'r') as stream:
+with open(fn_yaml2, 'r') as stream:
     parking_data = yaml.load(stream)
 
 # ------------------------

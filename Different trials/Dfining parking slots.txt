@@ -1,0 +1,19 @@
+1- Rotated Rectangles Algorithm:
+1.1-Hough line detection & threshold image
+1.2-Contouring
+1.3-Find rotated rectangles
+1.4-Mask for all area
+1.5-Bitwise xor between the mask and the threshold image to get the mask of each slot
+1.6-Averaging algorithm on pixels to determine which slot is empty
+
+Problems>> -No accurate rectangles
+           -Errors in getting mask
+
+2- Watershed Algorithm
+2.1- Hough line detection & Noise filtering
+2.2- Double dilate & subtract to get mask for lines
+2.3- Use canny & Hough line to remove conncetion between doubled lines
+2.4- Finding  contours and applying watershed algorithm
+
+problems>> -No accurate connections removal
+           -Failed to apply watershed algorithm

@@ -3,6 +3,7 @@
 
 fn = "datasets/parking1.mp4"
 fn_yaml = "datasets/parking1.yml"
+fn_yaml2 = "datasets/parking2.yml"
 fn_out = "datasets/output.avi"
 
 config = {

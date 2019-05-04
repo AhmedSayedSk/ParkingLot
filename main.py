@@ -15,7 +15,7 @@ from modules.parking_detection import parking_detection
 from modules.coordinates_generator import CoordinatesGenerator
 from modules.keyboard_options import keyboard_options
 from modules.export_reading_in_file import export_reading_in_file
-from modules.colors import COLOR_RED
+from modules.colors import *
 
 # ------------------------------------------------------------------------------------
 
@@ -27,8 +27,13 @@ parking_bounding_rects = []
 # contributor: Menna
 # ------------------------
 
+# Write YAML Data (parking space polygons)
+with open(fn_yaml2, "w+") as coors:
+  generator = CoordinatesGenerator("datasets/parking_lot_1.png", coors, COLOR_RED)
+  generator.generate()
+
 # Read YAML data (parking space polygons)
-with open(fn_yaml, 'r') as stream:
+with open(fn_yaml2, 'r') as stream:
     parking_data = yaml.load(stream)
 
 # ------------------------
@@ -63,10 +68,6 @@ while(cap.isOpened()):
     f_bluring = cv2.GaussianBlur(frame.copy(), (5,5), 3)
     f_gray = cv2.cvtColor(f_bluring, cv2.COLOR_BGR2GRAY)
     f_out = frame.copy()
-
-    with open("datasets/parking2.yml", "w+") as coors:
-        generator = CoordinatesGenerator("datasets/parking_lot_1.png", coors, COLOR_RED)
-        generator.generate()
 
     # Detect parking (Background Subtraction)
     parking_detection(parking_bounding_rects, f_gray, parking_lot_state, parking_buffer, video_cur_pos, parking_data)

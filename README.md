@@ -97,10 +97,6 @@ own mark `(at comments)` on the part they did in the project
 
 ---
 
-Shareholders
-------
-- [ParkingLot](https://github.com/olgarose/ParkingLot)
-
 License
 ------
 MIT

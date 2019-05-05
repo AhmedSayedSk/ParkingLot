@@ -44,17 +44,13 @@
 	<script type="text/javascript" src="app/assets/bootstrap/js/bootstrap.min.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
+			var file_path = "app/reading.txt";
 			setInterval(function(){
-				$.ajax({
-					url: 'app/processing.php',
-					type: 'post',
-					success: function(reading) {
-						var array_of_data = reading.split(',');
-
-						$('#freeSpaces').text(array_of_data.length);
-						$('#freeSpacesIs').css('font-size', '48px').text(array_of_data.join(' - '));
-					}
-				})
+				$.get(file_path, function(data) {
+					var array_of_data = data.split(',');
+					$('#freeSpaces').text(array_of_data.length);
+					$('#freeSpacesIs').css('font-size', '48px').text(array_of_data.join(' - '));
+		    }, "text");
 			}, 1000)
 		});
 	</script>

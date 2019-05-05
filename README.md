@@ -99,7 +99,7 @@ own mark `(at comments)` on the part they did in the project
 
 Shareholders
 ------
-- [https://github.com/olgarose/ParkingLot](ParkingLot)
+- [ParkingLot](https://github.com/olgarose/ParkingLot)
 
 License
 ------

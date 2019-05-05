@@ -7,9 +7,9 @@
 <html>
 <head>
 	<title>Parking Lot - APP</title>
-	<link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="app/assets/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="assets/main.css">
+	<link rel="stylesheet" type="text/css" href="app/assets/main.css">
 </head>
 <body>
 	<div class="container">
@@ -21,7 +21,7 @@
 					Total free places
 				</div>
 				<div id="freeSpaces" class="target text-success">
-					<img class="ajax-loader" src="assets/giphy.gif">
+					<img class="ajax-loader" src="app/assets/giphy.gif">
 				</div>
 			</div>
 			<div class="col-md-6 text-center right-sidebar">
@@ -30,7 +30,7 @@
 					Free places is
 				</div>
 				<div id="freeSpacesIs" class="target text-success">
-					<img class="ajax-loader" src="assets/giphy.gif">
+					<img class="ajax-loader" src="app/assets/giphy.gif">
 				</div>
 			</div>
 		</div>
@@ -40,13 +40,13 @@
 		</p>
 	</div>
 
-	<script type="text/javascript" src="assets/jquery.js"></script>
-	<script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="app/assets/jquery.js"></script>
+	<script type="text/javascript" src="app/assets/bootstrap/js/bootstrap.min.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
 			setInterval(function(){
 				$.ajax({
-					url: 'processing.php',
+					url: 'app/processing.php',
 					type: 'post',
 					success: function(reading) {
 						var array_of_data = reading.split(',');

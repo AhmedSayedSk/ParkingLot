@@ -1,15 +1,11 @@
 # Parkinglot (Image processing project)
 
 Team students name:
-- أحمد سيد أحمد محمد
-&nbsp;
-- عبدالله محسن سيد
-&nbsp;
-- منة ناصر عبدالتواب
-&nbsp;
-- مروة راوي عبدالحميد
-&nbsp;
-- عصمت سعيد خميس
+1. أحمد سيد أحمد محمد
+2. عبدالله محسن سيد
+3. منة ناصر عبدالتواب
+4. مروة راوي عبدالحميد
+5. عصمت سعيد خميس
 
 ---
 
@@ -27,9 +23,9 @@ you can also see this tutorial: [https://www.youtube.com/watch?v=k9em7Ey00xQ](ht
 
 Running
 ------
-1. To run parking lot from root folder: `python main.py --mode 1` for mode 1 or `python main.py --mode 2` for mode 2
+1. To run parking lot from root folder: `python main.py --mode 1` for `mode 1` or `python main.py --mode 2` for `mode 2`
 2. Detect the 4 corners of parking lot place then click `t` or for reset click `r`
-3. Fore running `App` please make sure you setup `XAMPP` first then open `app.html`
+3. For running `App` please make sure you setup `XAMPP` first then open `app.html`
 
 ---
 

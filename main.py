@@ -13,13 +13,11 @@ from modules.init_parking import init_parking
 from modules.init_parking_data import *
 from modules.parking_detection import parking_detection
 from modules.coordinates_generator import CoordinatesGenerator
-from modules.keyboard_options import keyboard_options
 from modules.export_reading_in_file import export_reading_in_file
-from modules.colors import *
 
 # ------------------------------------------------------------------------------------
 
-# CORE
+# CORE CODE
 # -----------------
 
 parking_bounding_rects = []
@@ -28,12 +26,12 @@ parking_bounding_rects = []
 # ------------------------
 
 # Write YAML Data (parking space polygons)
-with open(fn_yaml2, "w+") as coors:
-  generator = CoordinatesGenerator("datasets/parking_lot_1.png", coors, COLOR_RED)
+with open(fn_yaml, "w+") as coors:
+  generator = CoordinatesGenerator(fn_img, coors, (255, 0, 0))
   generator.generate()
 
 # Read YAML data (parking space polygons)
-with open(fn_yaml2, 'r') as stream:
+with open(fn_yaml, 'r') as stream:
     parking_data = yaml.load(stream)
 
 # ------------------------
@@ -104,9 +102,6 @@ while(cap.isOpened()):
     # Display video
     cv2.imshow('Image processing project (Parking Lot)', f_out)
     cv2.waitKey(1)
-
-    # Keyboard options
-    keyboard_options(vv_current_frame, f_out)
 
     # Export reading in file (to reading this for API app)
     export_reading_in_file(array_of_free_spaces)

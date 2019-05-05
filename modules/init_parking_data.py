@@ -2,10 +2,10 @@
 # -------------------------------
 
 import cv2
-from modules.config import config,fn
+from modules.config import *
 
 # Set capture device or file
-cap = cv2.VideoCapture(fn)
+cap = cv2.VideoCapture(fn_ved)
 
 video_info = {
 	'fps':    cap.get(cv2.CAP_PROP_FPS),

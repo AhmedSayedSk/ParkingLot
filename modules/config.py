@@ -1,16 +1,28 @@
+import argparse
+
 # contributors: Ahmed Sayed
 # -------------------------------
 
-fn = "datasets/parking1.mp4"
-fn_yaml = "datasets/parking1.yml"
-fn_yaml2 = "datasets/parking2.yml"
-fn_out = "datasets/output.avi"
+# Detect mode
+parser = argparse.ArgumentParser(description='Parking lot')
+parser.add_argument("--mode", dest="fn_test_mode", required=True)
+parser = parser.parse_args()
 
+# Test mode
+fn_test_mode = parser.fn_test_mode
+
+# Test videos
+fn_ved = "datasets/videos/parking_" + fn_test_mode + ".mp4"
+
+# Test Images
+fn_img = "datasets/images/parking_" + fn_test_mode + ".png"
+
+# Saving coordinates of user mouse clicks
+fn_yaml = "datasets/parking_yaml.yml"
+
+# Main project configuration
 config = {
-	'save_video': False,
-  'text_overlay': False,
   'parking_lot_overlay': True,
-  'parking_id_overlay': False,
   'parking_detection': True,
   'min_area_motion_contour': 60,
   'park_sec_to_wait': 3,

@@ -2,7 +2,7 @@
 # -------------------------------
 
 import numpy as np
-from modules.config import config,fn
+from modules.config import *
 
 # Detect subtraction of frames
 def parking_detection(parking_bounding_rects, f_gray, parking_lot_state, parking_buffer, video_cur_pos, parking_data):

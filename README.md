@@ -14,8 +14,8 @@ Requirements & Installation
 - Python 3.5+ - Please see `python_req.txt` to know python modules are required
 &nbsp;
 - XAMPP 3.1^ (PHP localhost) for running the app
-1. you can download it from this link: [https://www.apachefriends.org/download.html](https://www.apachefriends.org/download.html)
-2. you can also see this tutorial: [https://www.youtube.com/watch?v=k9em7Ey00xQ](https://www.youtube.com/watch?v=k9em7Ey00xQ)
+	1. you can download it from this link: [https://www.apachefriends.org/download.html](https://www.apachefriends.org/download.html)
+	2. you can also see this tutorial: [https://www.youtube.com/watch?v=k9em7Ey00xQ](https://www.youtube.com/watch?v=k9em7Ey00xQ)
 
 
 ---

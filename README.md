@@ -12,19 +12,18 @@ Team students name:
 Requirements & Installation
 ------
 - Python 3.5+ - Please see `python_req.txt` to know python modules are required
-&nbsp;
-- XAMPP 3.1^ (PHP localhost) for running the app
-	1. you can download it from this link: [https://www.apachefriends.org/download.html](https://www.apachefriends.org/download.html)
-	2. you can also see this tutorial: [https://www.youtube.com/watch?v=k9em7Ey00xQ](https://www.youtube.com/watch?v=k9em7Ey00xQ)
 
 
 ---
 
 Running
 ------
-1. To run parking lot from root folder: `python main.py --mode 1` for `mode 1` or `python main.py --mode 2` for `mode 2`
-2. Detect the 4 corners of parking lot place then click `t` or for reset click `r`
-3. For running `App` please make sure you setup `XAMPP` first then open `app.html`, make sure you open `app.html` as localhost not for localfiles
+* Parking lot:
+	1. To run parking lot from root folder: `python main.py --mode 1` for `mode 1` or `python main.py --mode 2` for `mode 2`
+	2. Detect the 4 corners of parking lot place then click `t` or for reset click `r`
+* App:
+	1. `python -m http.server 1337`
+	2. from your browser open [http://localhost:1337/app.html](http://localhost:1337/app.html)
 
 ---
 

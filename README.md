@@ -1,4 +1,4 @@
-# Parkinglot (Image processing project)
+﻿# Parkinglot (Image processing project)
 
 Team students name:
 1. أحمد سيد أحمد محمد
@@ -88,7 +88,10 @@ That step can be implemented using background subtraction algorithms:
   - ROI (Region of Interest) algorithm
 
 >3. ASSIGN THE FREE AND THE BUSY PARKING SLOTS
-
+   - BoundRectanagles on start frame by 4 clicks>>"t"
+   - Compare the status of frame with the start one
+   - Determine changes in frame (if empty slos are grren & occupied ones are red)
+   - The data of no. of empty slots and their numbers are sent to the app
 ---
 
 Note
